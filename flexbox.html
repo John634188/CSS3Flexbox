@@ -1,0 +1,118 @@
+
+<!DOCTYPE HTML>
+<head>
+<style>
+    @media(min-width:468px){
+    .container-1{
+    /*Display flex puts the divs inline with each other*/
+      display:flex;
+    }
+    
+    .container-2{
+      display:flex;
+      /*justify-content:space-between; This means that they will be spaced apart the furthest that they can evenly*/
+      justify-content:space-between;
+    }
+  }
+  
+  .container-3{
+    display:flex; 
+    /*flex:wrap:wrap makes the divs layer underneath each other of there is no space at the end of the screen.*/ 
+    flex-wrap:wrap;
+    justify-content:space-between;
+  }
+  
+  .container-1 div, .container-2 div, .container-3 div{
+    /*Setting the border and padding for all the classes*/
+    border:1px #ccc solid;
+    padding:10px;
+  }
+  
+  .box-1{
+    flex:2;
+    /*order 2 makes the box 1 the second box in order to show.*/
+    order:2;
+  }
+  
+  .box-2{
+    flex:1;
+    /*order 1 makes the box 2 the first box in order to show.*/
+    order:1;
+  }
+  
+  .box-3{
+    flex:1;
+    /*order 3 make box 3 the third box in order to show*/
+    order: 3;
+  }
+  
+  .container-2-box{
+    flex-basis: 27%;  
+  }
+  
+  .container-3-box{
+    /*The lower the percentage is, the further apart all the classes with container 3 there are*/
+    flex-basis:12%;
+  }
+</style>
+</head>
+<body>
+    <!--All the divs with the classes with flexbox-->
+<div class="container-1">
+  <div class="box-1">
+    <h3>Gustavine</h3>
+    <p>Hello I am Gustavine. I am 13 years old and I am very smart.I have a lot of hobbies including singing, writing and watching tv.</p>
+  </div>
+  <div class="box-2">
+    <h3>Gustav(daddy)</h3>
+    <p>Hello I am Gustav I am extremely clever and smart and I am a good chess player. I love to code and I have had multiple jobs in related to coding.</p>
+  </div>
+  <div class="box-3">
+    <h3>Jean-steve</h3>
+    <p>I am Jean-steve I love to play chess and play football. I also enjoy playing a lot of other sports aswell, including cricket basketball.</p>
+  </div>
+</div>
+  
+<div class="container-2">
+  <div class="container-2-box">
+    <h3>Jasmine</h3>
+  <p>Hello I am Jasmine. I am very smart and used to be an acountant. I love to watch movies in my bed and expecially with popcorn. I live in wellingborough and am now a scrum master.</p>
+  </div>
+  <div class="container-2-box">
+    <h3>Aunty Zenita</h3>
+    <p>Hello I am Aunty Zenita and I am really smart. I work in a hospital and I live in canada. I love canada. I have a brother called Gustav and a niece and nephew. </p>
+  </div>
+  <div class="container-2-box">
+    <h3>Box Six</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec elit urna. Suspendisse a erat a nibh imperdiet fermentum. In eleifend ultricies massa, id pretium purus convallis nec. </p>
+  </div>
+</div>
+
+<div class="container-3">
+  <div class="container-3-box">
+    <h3>Box Seven</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec elit urna. Suspendisse a erat a nibh imperdiet fermentum. In eleifend ultricies massa, id pretium purus convallis nec. </p>
+  </div>
+  <div class="container-3-box">
+    <h3>Box Eight</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec elit urna. Suspendisse a erat a nibh imperdiet fermentum. In eleifend ultricies massa, id pretium purus convallis nec. </p>
+  </div>
+  <div class="container-3-box">
+    <h3>Box Nine</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec elit urna. Suspendisse a erat a nibh imperdiet fermentum. In eleifend ultricies massa, id pretium purus convallis nec. </p>
+  </div>
+  <div class="container-3-box">
+    <h3>Box Ten</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec elit urna. Suspendisse a erat a nibh imperdiet fermentum. In eleifend ultricies massa, id pretium purus convallis nec. </p>
+  </div>
+  <div class="container-3-box">
+    <h3>Box Eleven</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec elit urna. Suspendisse a erat a nibh imperdiet fermentum. In eleifend ultricies massa, id pretium purus convallis nec. </p>
+  </div>
+  <div class="container-3-box">
+    <h3>Box Twelve</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec elit urna. Suspendisse a erat a nibh imperdiet fermentum. In eleifend ultricies massa, id pretium purus convallis nec. </p>
+  </div>
+</div>
+</body>
+</html>
